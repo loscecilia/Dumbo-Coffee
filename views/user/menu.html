@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dumbo Coffee-季度精选</title>
+    <link rel="shortcut icon" href="../../assets/img/favicon.ico" type="images/x-icon">
+    <link rel="stylesheet" href="../../assets/uikit/dist/css/uikit.css">
+    <link rel="stylesheet" href="../../assets/css/menu.css">
+    <script src="../../assets/uikit/dist/js/uikit.js"></script>
+    <script src="../../assets/uikit/dist/js/uikit-icons.min.js"></script>
+</head>
+<body>
+     <!-- nav-top -->
+    <div class="uk-width-1-1 nav bg-color uk-position-fixed">
+        <div class="uk-container uk-container-expand">
+            <nav class="uk-navbar">
+                <div class="uk-navbar-left">
+                    <img src="../../assets/img/Dumbo.png" alt="" style="width: 9vh; margin-right: 8px;">
+                    <span class="font-color logo">Dumbo Coffee</span>
+                </div>
+                <div class="uk-navbar-right">
+                    <div>
+                        <form class="uk-search uk-search-default bg-white">
+                            <a href="" class="uk-search-icon-flip" uk-search-icon></a>
+                            <input class="uk-search-input" type="search" placeholder="Search...">
+                        </form>
+                    </div>
+                </div>
+            </nav>
+        </div>     
+    </div>
+      <!-- content -->
+      <div>
+        <!-- menu -->
+        <div class="uk-width-1-4 menu uk-position-fixed">
+            <div class="uk-padding uk-padding-remove-bottom menu-logo">MENU</div>
+            <div class="uk-width-1-2@s uk-width-1-1@m uk-padding">
+                <ul class="uk-nav-default uk-nav-parent-icon" uk-nav>
+                    <li class="uk-active"><a href="menu.html">季度精选</a></li>
+                    <li class="uk-parent">
+                        <a href="#">饮料</a>
+                        <ul class="uk-nav-sub">
+                            <li><a href="drink.html">全部</a></li>
+                            <li><a href="drink.html#espresso">手工调制浓缩咖啡</a></li>
+                            <li><a href="drink.html#frappuccino-blended-beverage">星冰乐</a></li>
+                            <li><a href="drink.html#teavana">茶瓦纳</a></li>
+                            <li><a href="drink.html#modern-mixology">玩味冰调</a></li>
+                            <li><a href="drink.html#coffee-plus-ice-cream">咖啡冰淇淋</a></li>
+                            <li><a href="drink.html#cold-brew">冷萃咖啡系列</a></li>
+                        </ul>
+                    </li>
+                    <li class="uk-parent">
+                        <a href="#">美食</a>
+                        <ul class="uk-nav-sub">
+                            <li><a href="food.html">全部</a></li>
+                            <li><a href="food.html#bakery">烘焙</a></li>
+                            <li><a href="food.html#cake-dessert">蛋糕&甜品</a></li>
+                            <li><a href="food.html#sandwich">三明治、帕尼尼、卷</a></li>
+                            <li><a href="food.html#yoghurt">酸奶</a></li>
+                            <li><a href="food.html#package">其他美食</a></li>
+                        </ul>
+                    </li>
+                    <li class="uk-parent">
+                        <a href="#">咖啡产品</a>
+                        <ul class="uk-nav-sub">
+                            <li><a href="coffee.html">全部</a></li>
+                            <li>
+                                <a href="coffee.html#medium-roast">咖啡豆</a>
+                                <ul class="uk-nav-sub">
+                                    <!-- <li><a href="#">全部</a></li> -->
+                                    <li><a href="coffee.html#medium-roast">中度烘焙咖啡豆</a></li>
+                                    <li><a href="coffee.html#dark-roast">深度烘焙咖啡豆</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="coffee.html#via-dairy">免煮咖啡</a>
+                                <ul class="uk-nav-sub">
+                                    <!-- <li><a href="#">全部</a></li> -->
+                                    <li><a href="coffee.html#via-dairy">Dairy</a></li>
+                                    <li><a href="coffee.html#via-black">Black</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="coffee.html#reserve">臻选咖啡</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- content -->
+        <div class="uk-width-3-4 content uk-position-absolute uk-padding">
+            <div uk-filter="target: .js-filter">
+
+                <ul class="uk-subnav uk-subnav-pill">
+                    <li class="uk-active" uk-filter-control><a href="#">所有</a></li>
+                    <li uk-filter-control="[data-item='drink']"><a href="#">饮料</a></li>
+                    <li uk-filter-control="[data-item='food']"><a href="#">美食</a></li>
+                    <li uk-filter-control="[data-item='coffee']"><a href="#">咖啡产品</a></li>
+                </ul>
+            
+                <ul class="js-filter uk-child-width-1-2 uk-child-width-1-3@m" uk-grid>
+                    <li data-item="drink">
+                        <div class="uk-card uk-card-default">
+                            <div class="uk-card-media-top uk-inline-clip uk-transition-toggle" tabindex="0">
+                                <img class="uk-transition-scale-up uk-transition-opaque" src="../../assets/img/drink/vanilla-flavor-sweet-cream-cold-brew.jpg" alt="">
+                            </div>
+                            <div class="uk-card-body uk-padding-small" style="border-top: 1px solid #ddd;">
+                                <p>轻甜奶油冷萃</p>
+                                <p>￥35<button class="uk-button uk-button-default plus" uk-icon="plus"></button></p>
+                            </div>
+                        </div>
+                    </li>
+                    <li data-item="food">
+                        <div class="uk-card uk-card-default">
+                            <div class="uk-card-media-top uk-inline-clip uk-transition-toggle" tabindex="0">
+                                <img class="uk-transition-scale-up uk-transition-opaque" src="../../assets/img/food/bacon-and-egg-croissant-bun.jpg" alt="">
+                            </div>
+                            <div class="uk-card-body uk-padding-small" style="border-top: 1px solid #ddd;">
+                                <p>培根蛋可颂堡</p>
+                                <p>￥35<button class="uk-button uk-button-default plus" uk-icon="plus"></button></p>
+                            </div>
+                        </div>
+                    </li>
+                    <li data-item="drink">
+                        <div class="uk-card uk-card-default">
+                            <div class="uk-card-media-top uk-inline-clip uk-transition-toggle" tabindex="0">
+                                <img class="uk-transition-scale-up uk-transition-opaque" src="../../assets/img/drink/affogato.jpg" alt="">
+                            </div>
+                            <div class="uk-card-body uk-padding-small" style="border-top: 1px solid #ddd;">
+                                <p>阿馥奇朵</p>
+                                <p>￥35<button class="uk-button uk-button-default plus" uk-icon="plus"></button></p>
+                            </div>
+                        </div>
+                    </li>
+                    <li data-item="food">
+                        <div class="uk-card uk-card-default">
+                            <div class="uk-card-media-top uk-inline-clip uk-transition-toggle" tabindex="0">
+                                <img class="uk-transition-scale-up uk-transition-opaque" src="../../assets/img/food/triple-dark-chocolate-cake.jpg" alt="">
+                            </div>
+                            <div class="uk-card-body uk-padding-small" style="border-top: 1px solid #ddd;">
+                                <p>浓醇三重黑巧克力蛋糕</p>
+                                <p>￥35<button class="uk-button uk-button-default plus" uk-icon="plus"></button></p>
+                            </div>
+                        </div>
+                    </li>
+                    <li data-item="coffee">
+                        <div class="uk-card uk-card-default">
+                            <div class="uk-card-media-top uk-inline-clip uk-transition-toggle" tabindex="0">
+                                <img class="uk-transition-scale-up uk-transition-opaque" src="../../assets/img/coffee/via-caffe-mocha.jpg" alt="">
+                            </div>
+                            <div class="uk-card-body uk-padding-small" style="border-top: 1px solid #ddd;">
+                                <p>摩卡风味免煮咖啡固体饮料</p>
+                                <p>￥35<button class="uk-button uk-button-default plus" uk-icon="plus"></button></p>
+                            </div>
+                        </div>
+                    </li>
+                    <li data-item="drink">
+                        <div class="uk-card uk-card-default">
+                            <div class="uk-card-media-top uk-inline-clip uk-transition-toggle" tabindex="0">
+                                <img class="uk-transition-scale-up uk-transition-opaque" src="../../assets/img/drink/peach-shrub-fizz.jpg" alt="">
+                            </div>
+                            <div class="uk-card-body uk-padding-small" style="border-top: 1px solid #ddd;">
+                                <p>醋意桃桃</p>
+                                <p>￥35<button class="uk-button uk-button-default plus" uk-icon="plus"></button></p>
+                            </div>
+                        </div>
+                    </li>
+                    <li data-item="food">
+                        <div class="uk-card uk-card-default">
+                            <div class="uk-card-media-top uk-inline-clip uk-transition-toggle" tabindex="0">
+                                <img class="uk-transition-scale-up uk-transition-opaque" src="../../assets/img/food/eclair.jpg" alt="">
+                            </div>
+                            <div class="uk-card-body uk-padding-small" style="border-top: 1px solid #ddd;">
+                                <p>法式闪电泡芙</p>
+                                <p>￥35<button class="uk-button uk-button-default plus" uk-icon="plus"></button></p>
+                            </div>
+                        </div>
+                    </li>
+                    <li data-item="drink">
+                        <div class="uk-card uk-card-default">
+                            <div class="uk-card-media-top uk-inline-clip uk-transition-toggle" tabindex="0">
+                                <img class="uk-transition-scale-up uk-transition-opaque" src="../../assets/img/drink/mocha-frappuccino.jpg" alt="">
+                            </div>
+                            <div class="uk-card-body uk-padding-small" style="border-top: 1px solid #ddd;">
+                                <p>摩卡星冰乐</p>
+                                <p>￥35<button class="uk-button uk-button-default plus" uk-icon="plus"></button></p>
+                            </div>
+                        </div>
+                    </li>
+                    <li data-item="coffee">
+                        <div class="uk-card uk-card-default">
+                            <div class="uk-card-media-top uk-inline-clip uk-transition-toggle" tabindex="0">
+                                <img class="uk-transition-scale-up uk-transition-opaque" src="../../assets/img/coffee/china-qingkai-farm.png" alt="">
+                            </div>
+                            <div class="uk-card-body uk-padding-small" style="border-top: 1px solid #ddd;">
+                                <p>中国云南晴开农场咖啡豆</p>
+                                <p>￥35<button class="uk-button uk-button-default plus" uk-icon="plus"></button></p>
+                            </div>
+                        </div>
+                    </li>
+                    <li data-item="food">
+                        <div class="uk-card uk-card-default">
+                            <div class="uk-card-media-top uk-inline-clip uk-transition-toggle" tabindex="0">
+                                <img class="uk-transition-scale-up uk-transition-opaque" src="../../assets/img/food/avocado-and-chicken-bagel.jpg" alt="">
+                            </div>
+                            <div class="uk-card-body uk-padding-small" style="border-top: 1px solid #ddd;">
+                                <p>牛油果鸡肉焙果</p>
+                                <p>￥35<button class="uk-button uk-button-default plus" uk-icon="plus"></button></p>
+                            </div>
+                        </div>
+                    </li>
+                    <li data-item="drink">
+                        <div class="uk-card uk-card-default">
+                            <div class="uk-card-media-top uk-inline-clip uk-transition-toggle" tabindex="0">
+                                <img class="uk-transition-scale-up uk-transition-opaque" src="../../assets/img/drink/espresso.jpg" alt="">
+                            </div>
+                            <div class="uk-card-body uk-padding-small" style="border-top: 1px solid #ddd;">
+                                <p>浓缩咖啡</p>
+                                <p>￥35<button class="uk-button uk-button-default plus" uk-icon="plus"></button></p>
+                            </div>
+                        </div>
+                    </li>
+                    <li data-item="food">
+                        <div class="uk-card uk-card-default">
+                            <div class="uk-card-media-top uk-inline-clip uk-transition-toggle" tabindex="0">
+                                <img class="uk-transition-scale-up uk-transition-opaque" src="../../assets/img/food/chocolate-muffin.jpg" alt="">
+                            </div>
+                            <div class="uk-card-body uk-padding-small" style="border-top: 1px solid #ddd;">
+                                <p>香浓巧克力麦芬</p>
+                                <p>￥35<button class="uk-button uk-button-default plus" uk-icon="plus"></button></p>
+                            </div>
+                        </div>
+                    </li>
+                    <li data-item="drink">
+                        <div class="uk-card uk-card-default">
+                            <div class="uk-card-media-top uk-inline-clip uk-transition-toggle" tabindex="0">
+                                <img class="uk-transition-scale-up uk-transition-opaque" src="../../assets/img/drink/mocha-java-chip-frappuccino.jpg" alt="">
+                            </div>
+                            <div class="uk-card-body uk-padding-small" style="border-top: 1px solid #ddd;">
+                                <p>摩卡可可碎片星冰乐</p>
+                                <p>￥35<button class="uk-button uk-button-default plus" uk-icon="plus"></button></p>
+                            </div>
+                        </div>
+                    </li>
+                    <li data-item="coffee">
+                        <div class="uk-card uk-card-default">
+                            <div class="uk-card-media-top uk-inline-clip uk-transition-toggle" tabindex="0">
+                                <img class="uk-transition-scale-up uk-transition-opaque" src="../../assets/img/coffee/via-caramel-latte.jpg" alt="">
+                            </div>
+                            <div class="uk-card-body uk-padding-small" style="border-top: 1px solid #ddd;">
+                                <p>焦糖拿铁风味免煮咖啡固体饮料</p>
+                                <p>￥35<button class="uk-button uk-button-default plus" uk-icon="plus"></button></p>
+                            </div>
+                        </div>
+                    </li>
+                    <li data-item="food">
+                        <div class="uk-card uk-card-default">
+                            <div class="uk-card-media-top uk-inline-clip uk-transition-toggle" tabindex="0">
+                                <img class="uk-transition-scale-up uk-transition-opaque" src="../../assets/img/food/cashews.jpg" alt="">
+                            </div>
+                            <div class="uk-card-body uk-padding-small" style="border-top: 1px solid #ddd;">
+                                <p>腰果</p>
+                                <p>￥35<button class="uk-button uk-button-default plus" uk-icon="plus"></button></p>
+                            </div>
+                        </div>
+                    </li>
+                    <li data-item="drink">
+                        <div class="uk-card uk-card-default">
+                            <div class="uk-card-media-top uk-inline-clip uk-transition-toggle" tabindex="0">
+                                <img class="uk-transition-scale-up uk-transition-opaque" src="../../assets/img/drink/triple-citrus.jpg" alt="">
+                            </div>
+                            <div class="uk-card-body uk-padding-small" style="border-top: 1px solid #ddd;">
+                                <p>橙柚派对</p>
+                                <p>￥35<button class="uk-button uk-button-default plus" uk-icon="plus"></button></p>
+                            </div>
+                        </div>
+                    </li>
+                    <li data-item="drink">
+                        <div class="uk-card uk-card-default">
+                            <div class="uk-card-media-top uk-inline-clip uk-transition-toggle" tabindex="0">
+                                <img class="uk-transition-scale-up uk-transition-opaque" src="../../assets/img/drink/green-tea-frappuccino.jpg" alt="">
+                            </div>
+                            <div class="uk-card-body uk-padding-small" style="border-top: 1px solid #ddd;">
+                                <p>抹茶星冰乐</p>
+                                <p>￥35<button class="uk-button uk-button-default plus" uk-icon="plus"></button></p>
+                            </div>
+                        </div>
+                    </li>
+                    <li data-item="coffee">
+                        <div class="uk-card uk-card-default">
+                            <div class="uk-card-media-top uk-inline-clip uk-transition-toggle" tabindex="0">
+                                <img class="uk-transition-scale-up uk-transition-opaque" src="../../assets/img/coffee/colombia-monks-of-san-roque.png" alt="">
+                            </div>
+                            <div class="uk-card-body uk-padding-small" style="border-top: 1px solid #ddd;">
+                                <p>哥伦比亚圣洛克蒙克斯咖啡豆</p>
+                                <p>￥35<button class="uk-button uk-button-default plus" uk-icon="plus"></button></p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            
+            </div>
+            <!-- 购物车 -->
+            <div class="uk-position-fixed shopping-cart" uk-toggle="target: #offcanvas-flip" uk-icon="cart"></div>
+            <div id="offcanvas-flip" class="uk-offcanvas" uk-offcanvas="flip: true; overlay: true">
+                <div class="uk-offcanvas-bar">
+                    <button class="uk-offcanvas-close" type="button" uk-close style="color: black;"></button>
+                    <div>
+                        <div class="uk-card uk-card-small uk-card-body">
+                            <div class="uk-padding-small">
+                                <img src="../../assets/img/drink/green-tea-frappuccino.jpg" alt="" class="shopping_img">
+                                <span>轻甜奶油冷萃</span>
+                                <span class="uk-align-right"> x1</span>
+                                <span class="uk-align-right">￥39.50</span>
+                            </div>
+                            <hr>
+                            <div class="uk-padding-small">
+                                <img src="../../assets/img/drink/caramel-espresso-frappuccino.jpg" alt="" class="shopping_img">
+                                <span>焦糖玛奇朵（热）</span>
+                                <span class="uk-align-right"> x1</span>
+                                <span class="uk-align-right">￥39.50</span>
+                            </div>
+                            <hr>
+                            <div class="uk-padding-small">
+                                <img src="../../assets/img/food/pastrami-sandwich.jpg" alt="" class="shopping_img">
+                                <span>帕斯雀牛肉三明治</span>
+                                <span class="uk-align-right"> x1</span>
+                                <span class="uk-align-right">￥39.50</span>
+                            </div>
+                            <hr>
+                            <div class="uk-padding-small">
+                                <span class="uk-align-right color-dark">总计：￥107.7</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="uk-margin">
+                        <button class="uk-button uk-align-right" style="background-color: #7952b3;color: #ffffff" onclick="window.location='checkout.html'">我的订单</button>
+                    </div>
+                </div>
+            </div>
+        </div> 
+    </div>  
+</body>
+</html>

@@ -1,0 +1,95 @@
+*{
+    margin:0;
+    padding: 0;
+}
+html,body{
+    background-color: #f7f7f7;
+}
+
+
+/* ---------------------public------------------- */
+.bg-color{
+    background-color: #7952b3;
+}
+.bg-white{
+    background-color: #fff;
+}
+.font-color{
+    color: rgba(255,255,255,.85);
+}
+.active{
+    color: #fff;
+    font-weight: 600;
+}
+
+
+
+/* ---------------------public------------------- */
+
+
+
+
+.nav{
+    height: 10vh;
+    z-index: 1;
+}
+.logo{
+    font-size: 1.8em;
+    line-height: 10vh;
+    font-weight: 700;
+
+}
+.menu-logo{
+    font-size: 30px;
+    font-weight: 700;
+    color:  #7952b3;
+}
+.menu{
+    height: 90vh;
+    /* position: fixed; */
+    top: 10vh;
+    border-right: 1px solid #dddddd;
+    background-color: white;
+}
+.menu a{
+    font-size: 16px;
+    font-weight: 600;
+}
+.content{
+    /* position: absolute; */
+    top: 10vh;
+    right: 0;
+    /* width: 100%; */
+}
+.plus{
+    float: right;
+    color: #7952b3;
+}
+.shopping-cart{
+    width: 70px;
+    height: 70px;
+    bottom: 8%;
+    right: 5%;
+    background-color: #7952b3ce;
+    border-color: #7952b3;
+    border-radius: 100%;
+}
+.shopping-cart svg{
+    width: 70px;
+    /* color: #7952b3; */
+    color: white;
+    padding: 15px;
+    /* border-radius: 100%; */
+    border-radius: 40px;
+    border: 1px solid #7952b3;
+    
+}
+.shopping-cart svg:hover{
+    padding: 12px;
+}
+.shopping-cart svg:active{
+    border: none;
+}
+.shopping_img{
+    width: 50px;
+}

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dumbo Coffee-用户信息</title>
+    <link rel="shortcut icon" href="../../assets/img/favicon.ico" type="images/x-icon">
+    <link rel="stylesheet" href="../../assets/uikit/dist/css/uikit.css">
+    <link rel="stylesheet" href="../../assets/css/menu.css">
+    <script src="../../assets/uikit/dist/js/uikit.js"></script>
+    <script src="../../assets/uikit/dist/js/uikit-icons.min.js"></script>
+</head>
+<body>
+<!-- nav-top -->
+<div class="uk-width-1-1 nav bg-color uk-position-fixed">
+    <div class="uk-container uk-container-expand">
+        <nav class="uk-navbar">
+            <div class="uk-navbar-left">
+                <img src="../../assets/img/Dumbo.png" alt="" style="width: 9vh; margin-right: 8px;">
+                <span class="font-color logo">Dumbo Coffee</span>
+            </div>
+            <div class="uk-navbar-right">
+                <a href="../login.html" style="color: rgba(255,255,255,.85)">注销 <span uk-icon="sign-out"></span></a>
+            </div>
+        </nav>
+    </div>
+</div>
+<!-- content -->
+<div>
+    <!-- menu -->
+    <div class="uk-width-1-5 menu uk-position-fixed">
+        <div class="uk-padding uk-padding-remove-bottom menu-logo">Management</div>
+        <div class=" uk-padding">
+            <ul class="uk-nav uk-nav-default">
+                <li><a href="order.html">订单管理</a></li>
+                <li class="uk-active"><a href="user.html">用户管理</a></li>
+                <li><a href="supplier.html">供应商管理</a></li>
+                <li><a href="role.html">角色管理</a></li>
+                <li><a href="changePassword.html">修改密码</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- content -->
+    <div class="uk-width-4-5 content uk-position-absolute uk-padding-small">
+        <div class="uk-padding" style="background-color: white; border: 1px solid #dddddd">
+            <form class="uk-form-horizontal uk-padding">
+                <div class="uk-margin">
+                    <label class="uk-form-label" for="userID">用户ID：</label>
+                    <div class="uk-form-controls">
+                        <input class="uk-input" id="userID" type="text" placeholder="请输入用户ID">
+                    </div>
+                </div>
+                <div class="uk-margin">
+                    <label class="uk-form-label" for="userName">用户名：</label>
+                    <div class="uk-form-controls">
+                        <input class="uk-input" id="userName" type="text" placeholder="请输入用户名">
+                    </div>
+                </div>
+                <div class="uk-margin">
+                    <label class="uk-form-label" for="sex">性别：</label>
+                    <div class="uk-form-controls">
+                        <input class="uk-input" id="sex" type="text" placeholder="请输入性别">
+                    </div>
+                </div>
+                <div class="uk-margin">
+                    <label class="uk-form-label" for="age">年龄：</label>
+                    <div class="uk-form-controls">
+                        <input class="uk-input" id="age" type="text" placeholder="请输入年龄">
+                    </div>
+                </div>
+                <div class="uk-margin">
+                    <label class="uk-form-label" for="phone">电话：</label>
+                    <div class="uk-form-controls">
+                        <input class="uk-input" id="phone" type="text" placeholder="请输入电话">
+                    </div>
+                </div>
+                <div>
+                    <button class="uk-button uk-button-primary">保存</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dumbo Coffee-用户管理</title>
+    <link rel="shortcut icon" href="../../assets/img/favicon.ico" type="images/x-icon">
+    <link rel="stylesheet" href="../../assets/uikit/dist/css/uikit.css">
+    <link rel="stylesheet" href="../../assets/css/menu.css">
+    <script src="../../assets/uikit/dist/js/uikit.js"></script>
+    <script src="../../assets/uikit/dist/js/uikit-icons.min.js"></script>
+</head>
+<body>
+     <!-- nav-top -->
+    <div class="uk-width-1-1 nav bg-color uk-position-fixed">
+        <div class="uk-container uk-container-expand">
+            <nav class="uk-navbar">
+                <div class="uk-navbar-left">
+                    <img src="../../assets/img/Dumbo.png" alt="" style="width: 9vh; margin-right: 8px;">
+                    <span class="font-color logo">Dumbo Coffee</span>
+                </div>
+                <div class="uk-navbar-right">
+                    <a href="../login.html" style="color: rgba(255,255,255,.85)">注销 <span uk-icon="sign-out"></span></a>
+                </div>
+            </nav>
+        </div>     
+    </div>
+      <!-- content -->
+      <div>
+        <!-- menu -->
+        <div class="uk-width-1-5 menu uk-position-fixed">
+            <div class="uk-padding uk-padding-remove-bottom menu-logo">Management</div>
+            <div class=" uk-padding">
+                <ul class="uk-nav uk-nav-default">
+                    <li><a href="order.html">订单管理</a></li>
+                    <li class="uk-active"><a href="user.html">用户管理</a></li>
+                    <li><a href="supplier.html">供应商管理</a></li>
+                    <li><a href="role.html">角色管理</a></li>
+                    <li><a href="changePassword.html">修改密码</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- content -->
+        <div class="uk-width-4-5 content uk-position-absolute uk-padding-small">
+            <div class="uk-padding" style="background-color: white; border: 1px solid #dddddd">
+                <div>
+                    <span>用户名：</span>
+                    <form class="uk-search uk-search-default bg-white">
+                        <a href="" class="uk-search-icon-flip" uk-search-icon></a>
+                        <input class="uk-search-input" type="search" placeholder="Search...">
+                    </form>
+                    <button class="uk-button uk-button-secondary" style="margin-left: 30px;" onclick="window.location='userDetail.html'">添加</button>
+                </div>
+                <table class="uk-table uk-table-striped">
+                    <thead>
+                        <tr>
+                            <th>用户ID</th>
+                            <th>用户名</th>
+                            <th>性别</th>
+                            <th>年龄</th>
+                            <th>电话</th>
+                            <th>操作</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>asdds</td>
+                            <td>男</td>
+                            <td>22</td>
+                            <td>15339052523</td>
+                            <td>
+                                <button class="uk-button uk-button-primary uk-button-small" onclick="window.location='userDetail.html'">修改</button>
+                                <button class="uk-button uk-button-danger uk-button-small">删除</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>dfsdfdsf</td>
+                            <td>女</td>
+                            <td>28</td>
+                            <td>15339052523</td>
+                            <td>
+                                <button class="uk-button uk-button-primary uk-button-small" onclick="window.location='userDetail.html'">修改</button>
+                                <button class="uk-button uk-button-danger uk-button-small">删除</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>vcvdd</td>
+                            <td>男</td>
+                            <td>29</td>
+                            <td>15339052523</td>
+                            <td>
+                                <button class="uk-button uk-button-primary uk-button-small" onclick="window.location='userDetail.html'">修改</button>
+                                <button class="uk-button uk-button-danger uk-button-small">删除</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>rrrg</td>
+                            <td>女</td>
+                            <td>24</td>
+                            <td>15339052523</td>
+                            <td>
+                                <button class="uk-button uk-button-primary uk-button-small" onclick="window.location='userDetail.html'">修改</button>
+                                <button class="uk-button uk-button-danger uk-button-small">删除</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div> 
+    </div>  
+</body>
+</html>
