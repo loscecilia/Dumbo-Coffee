@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dumbo Coffee-添加商品</title>
+    <link rel="shortcut icon" href="../../assets/img/favicon.ico" type="images/x-icon">
+    <link rel="stylesheet" href="../../assets/uikit/dist/css/uikit.css">
+    <link rel="stylesheet" href="../../assets/css/menu.css">
+    <script src="../../assets/uikit/dist/js/uikit.js"></script>
+    <script src="../../assets/uikit/dist/js/uikit-icons.min.js"></script>
+    <script src="../../assets//uikit/dist/js/components/upload.js"></script>
+</head>
+<body>
+<!-- nav-top -->
+<div class="uk-width-1-1 nav bg-color uk-position-fixed">
+    <div class="uk-container uk-container-expand">
+        <nav class="uk-navbar">
+            <div class="uk-navbar-left">
+                <img src="../../assets/img/Dumbo.png" alt="" style="width: 9vh; margin-right: 8px;">
+                <span class="font-color logo">Dumbo Coffee</span>
+            </div>
+            <div class="uk-navbar-right">
+                <a href="../login.html" style="color: rgba(255,255,255,.85)">注销 <span uk-icon="sign-out"></span></a>
+            </div>
+        </nav>
+    </div>
+</div>
+<!-- content -->
+<div>
+    <!-- menu -->
+    <div class="uk-width-1-5 menu uk-position-fixed">
+        <div class="uk-padding uk-padding-remove-bottom menu-logo">Management</div>
+        <div class=" uk-padding">
+            <ul class="uk-nav uk-nav-default">
+                <li><a href="order.html">订单管理</a></li>
+                <li class="uk-active"><a href="add.html">添加商品</a></li>
+                <li><a href="user.html">用户管理</a></li>
+                <li><a href="supplier.html">供应商管理</a></li>
+                <li><a href="role.html">角色管理</a></li>
+                <li><a href="statistic.html">销售数据</a></li>
+                <li><a href="changePassword.html">修改密码</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- content -->
+    <div class="uk-width-4-5 content uk-position-absolute uk-padding-small">
+        <div class="uk-padding" style="background-color: white; border: 1px solid #dddddd">
+            <form class="uk-form-horizontal uk-padding">
+                <div class="js-upload uk-placeholder uk-text-center">
+                    <span uk-icon="icon: cloud-upload"></span>
+                    <span class="uk-text-middle">Attach binaries by dropping them here or</span>
+                    <div uk-form-custom>
+                        <input type="file" multiple>
+                        <span class="uk-link">selecting one</span>
+                    </div>
+                </div>
+                
+                <progress id="js-progressbar" class="uk-progress" value="0" max="100" hidden></progress>
+                
+                <script>
+                
+                    var bar = document.getElementById('js-progressbar');
+                
+                    UIkit.upload('.js-upload', {
+                
+                        url: '',
+                        multiple: true,
+                
+                        beforeSend: function () {
+                            console.log('beforeSend', arguments);
+                        },
+                        beforeAll: function () {
+                            console.log('beforeAll', arguments);
+                        },
+                        load: function () {
+                            console.log('load', arguments);
+                        },
+                        error: function () {
+                            console.log('error', arguments);
+                        },
+                        complete: function () {
+                            console.log('complete', arguments);
+                        },
+                
+                        loadStart: function (e) {
+                            console.log('loadStart', arguments);
+                
+                            bar.removeAttribute('hidden');
+                            bar.max = e.total;
+                            bar.value = e.loaded;
+                        },
+                
+                        progress: function (e) {
+                            console.log('progress', arguments);
+                
+                            bar.max = e.total;
+                            bar.value = e.loaded;
+                        },
+                
+                        loadEnd: function (e) {
+                            console.log('loadEnd', arguments);
+                
+                            bar.max = e.total;
+                            bar.value = e.loaded;
+                        },
+                
+                        completeAll: function () {
+                            console.log('completeAll', arguments);
+                
+                            setTimeout(function () {
+                                bar.setAttribute('hidden', 'hidden');
+                            }, 1000);
+                
+                            alert('Upload Completed');
+                        }
+                
+                    });
+                
+                </script>
+                <div class="uk-margin">
+                    <label class="uk-form-label" for="orderID">商品名称：</label>
+                    <div class="uk-form-controls">
+                        <input class="uk-input" id="orderID" type="text" placeholder="请输入商品名称">
+                    </div>
+                </div>
+                <div class="uk-margin">
+                    <label class="uk-form-label" for="orderInfo">商品价格：</label>
+                    <div class="uk-form-controls">
+                        <input class="uk-input" id="orderInfo" type="text" placeholder="请输入商品价格">
+                    </div>
+                </div>
+                <div class="uk-margin">
+                    <label class="uk-form-label" for="orderInfo">商品类别：</label>
+                    <div class="uk-form-controls">
+                        <input class="uk-input" id="orderInfo" type="text" placeholder="请输入商品类别">
+                    </div>
+                </div>
+                <div class="uk-margin">
+                    <label class="uk-form-label" for="orderPrice">上架日期：</label>
+                    <div class="uk-form-controls">
+                        <input class="uk-input" id="orderPrice" type="text" placeholder="请输入上架日期">
+                    </div>
+                </div>
+                <div class="uk-margin">
+                    <label class="uk-form-label" for="orderDate">供应商名称：</label>
+                    <div class="uk-form-controls">
+                        <input class="uk-input" id="orderDate" type="text" placeholder="请输入供应商名称">
+                    </div>
+                </div>
+                    <button class="uk-button uk-button-primary">保存</button>
+<!--                    <button class="uk-button uk-button-default" onclick="window.location='../order.html'">返回</button>-->
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+</body>
+</html>

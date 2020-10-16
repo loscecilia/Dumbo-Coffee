@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dumbo Coffee-销售数据</title>
+    <link rel="shortcut icon" href="../../assets/img/favicon.ico" type="images/x-icon">
+    <link rel="stylesheet" href="../../assets/uikit/dist/css/uikit.css">
+    <link rel="stylesheet" href="../../assets/css/menu.css">
+    <script src="../../assets/uikit/dist/js/uikit.js"></script>
+    <script src="../../assets/uikit/dist/js/uikit-icons.min.js"></script>
+    <script src="../../assets/echarts/dist/echarts.min.js"></script>
+</head>
+<body>
+<!-- nav-top -->
+<div class="uk-width-1-1 nav bg-color uk-position-fixed">
+    <div class="uk-container uk-container-expand">
+        <nav class="uk-navbar">
+            <div class="uk-navbar-left">
+                <img src="../../assets/img/Dumbo.png" alt="" style="width: 9vh; margin-right: 8px;">
+                <span class="font-color logo">Dumbo Coffee</span>
+            </div>
+            <div class="uk-navbar-right">
+                <a href="../login.html" style="color: rgba(255,255,255,.85)">注销 <span uk-icon="sign-out"></span></a>
+            </div>
+        </nav>
+    </div>
+</div>
+<!-- content -->
+<div>
+    <!-- menu -->
+    <div class="uk-width-1-5 menu uk-position-fixed">
+        <div class="uk-padding uk-padding-remove-bottom menu-logo">Management</div>
+        <div class=" uk-padding">
+            <ul class="uk-nav uk-nav-default">
+                <li><a href="order.html">订单管理</a></li>
+                <li><a href="add.html">添加商品</a></li>
+                <li><a href="user.html">用户管理</a></li>
+                <li><a href="supplier.html">供应商管理</a></li>
+                <li><a href="role.html">角色管理</a></li>
+                <li class="uk-active"><a href="statistic.html">销售数据</a></li>
+                <li><a href="changePassword.html">修改密码</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- content -->
+    <div class="uk-width-4-5 content uk-position-absolute uk-padding-small">
+        <div class="uk-padding" style="background-color: white; border: 1px solid #dddddd">
+            <div id="main" style="width: 800px;height:400px;"></div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+    // 基于准备好的dom，初始化echarts实例
+    var myChart = echarts.init(document.getElementById('main'));
+
+    // 指定图表的配置项和数据
+    var option = {
+        title: {
+            text: 'Dumbo Coffee 月销售数据'
+        },
+        tooltip: {},
+        legend: {
+            data:['销量']
+        },
+        xAxis: {
+            data: ["浓缩咖啡","星冰乐","茶瓦纳","玩味冰调","冰淇淋","冷萃咖啡","烘焙","蛋糕","咖啡产品"]
+        },
+        yAxis: {},
+        series: [{
+            name: '销量',
+            type: 'bar',
+            data: [33, 20, 12,8,15,6,23,28,19]
+        }],
+        itemStyle: {
+            // 设置扇形的颜色
+            color: '#9f76dc',
+            // shadowBlur: 200,
+            shadowColor: 'rgba(0, 0, 0, 0.5)'
+        }
+    };
+
+    // 使用刚指定的配置项和数据显示图表。
+    myChart.setOption(option);
+</script>
+</body>
+</html>

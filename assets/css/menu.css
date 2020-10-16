@@ -39,6 +39,9 @@ html,body{
     font-weight: 700;
 
 }
+.logo:hover{
+    cursor: pointer;
+}
 .menu-logo{
     font-size: 30px;
     font-weight: 700;
